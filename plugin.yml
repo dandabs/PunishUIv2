@@ -1,0 +1,21 @@
+name: PunishUI
+version: 2.0.0
+author: dandabsMC
+main: net.danielonline.pui.PunishUI
+commands:
+  ban:
+    description: Opens the Moderator menu
+    permission: devdan.pui.ban
+  mute:
+    description: Opens the Chat Moderator menu
+    permission: devdan.pui.mute
+  pui:
+    description: Information
+  punishui:
+    description: Information
+  punishinterface:
+    description: Information
+  credits:
+    description: Credits
+  puicredit:
+    description: Credits

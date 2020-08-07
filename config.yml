@@ -1,0 +1,123 @@
+# ---
+#  _____             _     _     _    _ _____        ___  
+# |  __ \           (_)   | |   | |  | |_   _|      |__ \ 
+# | |__) |   _ _ __  _ ___| |__ | |  | | | |   __   __ ) |
+# |  ___/ | | | '_ \| / __| '_ \| |  | | | |   \ \ / // / 
+# | |   | |_| | | | | \__ \ | | | |__| |_| |_   \ V // /_ 
+# |_|    \__,_|_| |_|_|___/_| |_|\____/|_____|   \_/|____|
+# ---                                                       
+# ---
+# PunishUI V2 by DevDan
+# Official server: CloudCraftMC - IP: play.cloudcraftmc.org.uk
+# This is my second plugin!
+# Donate? http://bit.ly/ID5-Donate
+# On the commands, such as ban_command, please use the plugin root without the "/",
+# such as essentials:ban instead of ban.
+# ---
+# The reccomended punishment plugin is MaxBans by netherfoam.
+# https://dev.bukkit.org/projects/maxbans
+# ---
+# When configuring the punish lengths, the following format is vital:
+# PERM is a bool, so this must be either 'True' or 'False' (no quotes)
+# LENGTH is an int, so this must be a number with no decimal place
+# FORM is a string, but this must be either 'minute', 'hour', 'day', 'week', 'month' or 'year'
+# CMD is a string, but this must be either 'perm' (this is for a perm ban), 'kick', 'mute', 'tempban', 'tempmute' or 'warn'
+# ---
+cmds: 
+    punish:
+        ban_command: maxbans:ban
+        kick_command: maxbans:kick
+        mute_command: maxbans:mute
+        tempban_command: maxbans:tempban
+        tempmute_command: maxbans:tempmute
+        warn_command: maxbans:warn
+    tools:
+        altfinder_command: maxbans:dupeip
+        uuidfinder_command: maxbans:uuid
+        statuscheck_command: maxbans:checkban
+lengths:
+    Hacking:
+        length: 0
+        form: minute
+        cmd: perm
+    Cmd_Abuse:
+        length: 6
+        form: hour
+        cmd: tempban
+    Pvp_Rel:
+        length: 0
+        form: minute
+        cmd: warn
+    Greifing:
+        length: 4
+        form: week
+        cmd: tempban
+    Roleplay:
+        length: 0
+        form: minute
+        cmd: warn
+    Chat:
+        length: 1
+        form: month
+        cmd: tempmute
+    Discrimination:
+        length: 1
+        form: year
+        cmd: tempban
+    Cheating:
+        length: 0
+        form: minute
+        cmd: warn
+    Scamming:
+        length: 3
+        form: day
+        cmd: tempban
+    Annoying:
+        length: 6
+        form: hour
+        cmd: tempban
+    Disrespect:
+        length: 5
+        form: minute
+        cmd: tempban
+    Innapropriate:
+        length: 5
+        form: minute
+        cmd: tempban
+    MuteSwearing:
+        length: 20
+        form: minute
+    MuteBypassing:
+        length: 1
+        form: day
+    MuteThreatening:
+        length: 5
+        form: minute
+    MuteRacism:
+        length: 1
+        form: week
+    MuteSexism:
+        length: 1
+        form: week
+    MuteInnapropriate:
+        length: 1
+        form: hour
+    MuteDiscrimination:
+        length: 1
+        form: week
+    MuteUnkind:
+        length: 5
+        form: minute
+    MuteScam:
+        length: 20
+        form: minute
+    MuteOffence:
+        length: 1
+        form: month
+    MuteDisrespect:
+        length: 10
+        form: minute
+    MuteOther:
+        length: 1
+        form: hour
+         
